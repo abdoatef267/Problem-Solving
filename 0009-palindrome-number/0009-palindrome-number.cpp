@@ -2,14 +2,16 @@ class Solution {
 public:
     bool isPalindrome(int x) {
         if (x < 0) return false;
-
-        int original = x;
-        long long reversed = 0;
-
-        while (x != 0) {
-            int digit = x % 10;       
-            reversed = reversed * 10 + digit; 
-            x /= 10;                     }
-        return original == reversed;
+        string s = to_string(x);
+        int n = s.length();
+        string firstHalf = s.substr(0, n / 2);
+        string secondHalf;
+        if (n % 2 == 0) {
+            secondHalf = s.substr(n / 2);
+        } else {
+            secondHalf = s.substr(n / 2 + 1);
+        }
+        reverse(secondHalf.begin(), secondHalf.end());
+        return firstHalf == secondHalf;
     }
 };

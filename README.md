@@ -14,6 +14,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0009-palindrome-number](https://github.com/abdoatef267/Problem-Solving/tree/master/0009-palindrome-number) |
 | [0013-roman-to-integer](https://github.com/abdoatef267/Problem-Solving/tree/master/0013-roman-to-integer) |
 | [0070-climbing-stairs](https://github.com/abdoatef267/Problem-Solving/tree/master/0070-climbing-stairs) |
+| [0204-count-primes](https://github.com/abdoatef267/Problem-Solving/tree/master/0204-count-primes) |
 ## String
 |  |
 | ------- |
@@ -22,6 +23,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/abdoatef267/Problem-Solving/tree/master/0001-two-sum) |
+| [0204-count-primes](https://github.com/abdoatef267/Problem-Solving/tree/master/0204-count-primes) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -30,4 +32,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0070-climbing-stairs](https://github.com/abdoatef267/Problem-Solving/tree/master/0070-climbing-stairs) |
+## Enumeration
+|  |
+| ------- |
+| [0204-count-primes](https://github.com/abdoatef267/Problem-Solving/tree/master/0204-count-primes) |
+## Number Theory
+|  |
+| ------- |
+| [0204-count-primes](https://github.com/abdoatef267/Problem-Solving/tree/master/0204-count-primes) |
 <!---LeetCode Topics End-->

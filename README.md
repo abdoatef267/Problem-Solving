@@ -19,6 +19,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0013-roman-to-integer](https://github.com/abdoatef267/Problem-Solving/tree/master/0013-roman-to-integer) |
+| [0020-valid-parentheses](https://github.com/abdoatef267/Problem-Solving/tree/master/0020-valid-parentheses) |
 ## Array
 |  |
 | ------- |
@@ -40,4 +41,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0204-count-primes](https://github.com/abdoatef267/Problem-Solving/tree/master/0204-count-primes) |
+## Stack
+|  |
+| ------- |
+| [0020-valid-parentheses](https://github.com/abdoatef267/Problem-Solving/tree/master/0020-valid-parentheses) |
 <!---LeetCode Topics End-->

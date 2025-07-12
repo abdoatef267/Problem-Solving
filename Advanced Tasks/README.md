@@ -1,4 +1,4 @@
-This Folder Contain S.S For Tasks In Group Advanced  /n
+This Folder Contain S.S For Tasks In Group Advanced  
 1 to N
 Even Numbers
 Fixed Password

@@ -14,11 +14,11 @@ void main() {
   print(address);
 }
 ```
-###3.How do you declare a nullable type in Dart null safety?
+### 3.How do you declare a nullable type in Dart null safety?
 ```dart
 int? age; //can be null or int
 ```
-###4.Write a program in a dart to create an age variable and assign a `null` value to it using `?`
+### 4.Write a program in a dart to create an age variable and assign a `null` value to it using `?`
 ```dart
 void main() {
   int? age = null;

@@ -25,6 +25,28 @@ void main() {
   print(age); // print null
 }
 ```
-###5.Write a function that accepts a nullable int parameter and returns 0 if the value is null using null coalescing operator `??`
+### 5.Write a function that accepts a nullable int parameter and returns 0 if the value is null using null coalescing operator `??`
+```dart
+int checkValue(int? value) {
+  return value ?? 0;
+}
 
-###6.Write a function named `generateRandom()` in dart that randomly returns `100` or `null`. Also, assign a return value of the function to a variable named `status` that can’t be null. Give status a default value of 0, if `generateRandom()` function returns null.
+void main() {
+  print(checkValue(null)); // 0
+  print(checkValue(5));    // 5
+}
+
+```
+### 6.Write a function named `generateRandom()` in dart that randomly returns `100` or `null`. Also, assign a return value of the function to a variable named `status` that can’t be null. Give status a default value of 0, if `generateRandom()` function returns null.
+```dart
+import 'dart:math';
+
+int? generateRandom() {
+  return Random().nextBool() ? 100 : null;
+}
+
+void main() {
+  int status = generateRandom() ?? 0;
+  print("Status: $status");
+}
+```

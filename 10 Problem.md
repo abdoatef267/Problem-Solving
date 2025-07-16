@@ -52,16 +52,86 @@ void main() {
   print("Unique characters: $uniqueChars");
 }
 ```
-### 6.Write a function named `generateRandom()` in dart that randomly returns `100` or `null`. Also, assign a return value of the function to a variable named `status` that can’t be null. Give status a default value of 0, if `generateRandom()` function returns null.
+### 6.Word Frequency Counter
+```dart
+void main() {
+  String sentence = "hello world hello dart dart dart";
+  List<String> words = sentence.split(' ');
+  Map<String, int> wordCount = {};
+
+  for (var word in words) {
+    wordCount[word] = (wordCount[word] ?? 0) + 1;
+  }
+
+  wordCount.forEach((word, count) {
+    print("$word: $count");
+  });
+}
+```
+### 7. Check Membership
+```dart
+void main() {
+  Set<String> knownWords = {"dart", "flutter", "async", "future"};
+  String input = "flutter";
+
+  if (knownWords.contains(input)) {
+    print("The word '$input' is known.");
+  } else {
+    print("The word '$input' is unknown.");
+  }
+}
+```
+### 8. Delayed Capital Letters
+```dart
+import 'dart:async';
+
+Future<List<String>> delayedUppercase(String text) async {
+  await Future.delayed(Duration(seconds: 2));
+  return text.split('').map((c) => c.toUpperCase()).toList();
+}
+
+void main() async {
+  String input = "dart";
+  List<String> result = await delayedUppercase(input);
+  print("Uppercased after delay: $result");
+}
+```
+### 9. Async Data Chain
 ```dart
 import 'dart:math';
 
-int? generateRandom() {
-  return Random().nextBool() ? 100 : null;
+Future<int?> fetchAge() async {
+  await Future.delayed(Duration(seconds: 1));
+  return Random().nextBool() ? Random().nextInt(100) : null;
 }
 
 void main() {
-  int status = generateRandom() ?? 0;
-  print("Status: $status");
+  fetchAge().then((value) {
+    int age = value ?? 0;
+    print("Age: $age");
+  });
+}
+```
+### 10. Full Pipeline
+```dart
+void main() {
+  String sentence = "hello world 123";
+
+  final uniqueLetters = sentence
+      .split('')
+      .toSet()
+      .where((c) => RegExp(r'[a-zA-Z]').hasMatch(c))
+      .toList();
+
+  print("Unique letters: $uniqueLetters");
+
+  List<int> asciiCodes = uniqueLetters.map((c) => c.codeUnitAt(0)).toList();
+
+  int totalAscii = asciiCodes.isEmpty ? 0 : asciiCodes.reduce((a, b) => a + b);
+
+  print("Total ASCII sum: $totalAscii");
+
+  String strength = totalAscii > 1000 ? "Strong" : "Weak";
+  print("Strength: $strength");
 }
 ```
